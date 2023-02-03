@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from '../App';
-import Profile from './Profile';
+import Catalog from './Catalog';
 import Nav from './Nav';
 
 const RouteSwitch = () => {
@@ -10,7 +10,7 @@ const RouteSwitch = () => {
                 <Nav/>
                 <Routes>
                     <Route path='/' exact element={<App/>}/>
-                    <Route path='/profile' element={<Profile/>}/>
+                    <Route path='/Catalog' element={<Catalog/>}/>
                 </Routes>
             </div>
         </BrowserRouter>
