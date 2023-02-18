@@ -7,7 +7,7 @@ function Product(props) {
 
     return (
         <div 
-            className="Product"
+            className="product-card"
             id={id}
         >
             <figure>

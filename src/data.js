@@ -10,7 +10,13 @@ let products = [
     {
         src: Ryan,
         id: 1,
-        title: 'Ryan for Sale',
+        title: 'Ryan for Sale?',
+        price: 3
+    },
+    {
+        src: Ryan,
+        id: 2,
+        title: 'Ryan for Sale!',
         price: 3
     }
 ]

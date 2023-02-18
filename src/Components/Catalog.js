@@ -4,7 +4,9 @@ import ProductContainer from "./ProductContainer";
 const Catalog = () => {
     return (
         <div>
-            <ProductContainer/>
+            <div>
+                <ProductContainer/>
+            </div>
             <h1>Hello from Catalog</h1>
         </div>
     )
