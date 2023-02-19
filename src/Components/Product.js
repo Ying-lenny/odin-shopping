@@ -5,6 +5,10 @@ function Product(props) {
         product: { src, id, title, price } ,
     } = props;
 
+    const addToCart = () => {
+        console.log("Add to cart")
+    }
+
     return (
         <div 
             className="product-card"
@@ -18,6 +22,9 @@ function Product(props) {
                 <br/>
                 {price}
             </figcaption>
+            <button
+                onClick={addToCart}
+            >Add to Cart</button>
         </div>
     )
 }
