@@ -4,6 +4,7 @@ function ShoppingCart() {
     return( 
         <div>
             <p>I'm da shopping cart</p>
+            <p>Total Amount: </p>
         </div>
     )
 }
