@@ -23,7 +23,7 @@ const Catalog = () => {
             <div>
                 <ProductContainer/>
             </div>
-            <h1>Hello from Catalog</h1>
+            <h1>Hello from the shopping Catalog</h1>
         </div>
     )
 }
