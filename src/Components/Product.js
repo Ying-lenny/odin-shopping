@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
+import CartContext from "../context/CartContext";
 
 function Product(props) {
     const {
         product: { src, id, title, price } ,
     } = props;
+    const {addItemToCart} = useContext(CartContext);
 
-    const addToCart = () => {
-        console.log("Add to cart")
+    const giveCartProductDetails = (e) => {
+        const productDetails = {
+            src: src,
+            id: id,
+            title: title,
+            price: price
+        }
+        addItemToCart(productDetails)
     }
 
     return (
@@ -23,7 +31,7 @@ function Product(props) {
                 {price}
             </figcaption>
             <button
-                onClick={addToCart}
+                onClick={giveCartProductDetails}
             >Add to Cart</button>
         </div>
     )
