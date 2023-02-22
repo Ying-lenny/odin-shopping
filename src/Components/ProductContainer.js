@@ -1,5 +1,5 @@
 import React from "react";
-import Product from "./Product";
+import ProductCard from "./ProductCard";
 import products from "../data";
 
 function ProductContainer() {
@@ -7,7 +7,7 @@ function ProductContainer() {
     return (
         <div className="product-container">
             {products.map((card) => (
-                <Product product={card} key={card.id}/>
+                <ProductCard product={card} key={card.id}/>
             ))}
         </div>
     )

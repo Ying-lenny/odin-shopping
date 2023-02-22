@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import CartContext from "../context/CartContext";
 
-function Product(props) {
+function ProductCard(props) {
     const {
         product: { src, id, title, price } ,
     } = props;
@@ -37,4 +37,4 @@ function Product(props) {
     )
 }
 
-export default Product;
+export default ProductCard;

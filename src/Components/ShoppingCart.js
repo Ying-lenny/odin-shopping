@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
+import CartContext from "../context/CartContext";
+import ShoppingCartCard from "./ShoppingCartCard";
 
 function ShoppingCart() {
+
+    const {cart} = useContext(CartContext);
+
     return( 
         <div>
-            <p>I'm da shopping cart</p>
-            <p>Total Amount: </p>
+            {cart.map((product) => {
+                return (
+                    <div>
+                        <ShoppingCartCard
+                            key={product["title"]}
+                            product={product}
+                        />
+                    </div>
+                );
+            })}
         </div>
     )
 }
