@@ -9,10 +9,10 @@ function ShoppingCartCard({product}){
     }
 
     return(
-        <>
+        <div className="product-card">
             <img src={product["src"]} alt={product["title"]}/>
             <button onClick={removeFromCart}>Button</button>
-        </>
+        </div>
     )
 }
 

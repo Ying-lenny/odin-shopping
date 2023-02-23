@@ -1,22 +1,24 @@
-import Ryan from './Assets/Ryan.jpg'
+import OnePiece from './Assets/OnePiece.png'
+import Pluto from './Assets/Pluto.jpg'
+import Jojo from './Assets/Jojo.jpg'
 
 let products = [
     {
-        src: Ryan,
+        src: OnePiece,
         id: 0,
-        title: 'Ryan for Sale',
+        title: 'One Piece Vol. 1',
         price: 2
     },
     {
-        src: Ryan,
+        src: Pluto,
         id: 1,
-        title: 'Ryan for Sale?',
+        title: 'Pluto Vol. 1',
         price: 3
     },
     {
-        src: Ryan,
+        src: Jojo,
         id: 2,
-        title: 'Ryan for Sale!',
+        title: "Jojo's bizarre adventure Vol. 1",
         price: 3
     }
 ]

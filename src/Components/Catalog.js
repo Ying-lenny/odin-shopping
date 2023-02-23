@@ -1,7 +1,7 @@
 import {React, useState} from "react";
 import ProductContainer from "./ProductContainer";
 import ShoppingCart from "./ShoppingCart";
-import Ryan from '../Assets/Ryan.jpg'
+import cart from '../Assets/cart.png'
 
 const Catalog = () => {
     const [cartClicked, setCartClicked] = useState(false)
@@ -18,7 +18,7 @@ const Catalog = () => {
                     setCartClicked(!cartClicked);
                 }}
             >
-                <img src={Ryan} alt='Ryan'/>
+                <img src={cart} alt='cart'/>
             </div>
             <div>
                 <ProductContainer/>

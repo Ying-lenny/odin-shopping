@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CartIcon from "../Assets/cart.png"
 
-const Nav = () => {
+function  Nav({}){
     return (
         <div className="navbar">
                 <ul className="nav-links">
