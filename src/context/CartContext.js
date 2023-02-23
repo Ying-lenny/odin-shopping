@@ -7,7 +7,6 @@ export function CartProvider({children}){
 
     function addItemToCart(item){
         setCart(prevCart => [...prevCart, item]);
-        console.log("Hello")
     }
 
     function removeItemFromCart(item){

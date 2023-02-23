@@ -22,17 +22,19 @@ function ProductCard(props) {
             className="product-card"
             id={id}
         >
-            <figure>
+            <div className="product-image">
                 <img src={src} alt={title}/>
-            </figure>
-            <figcaption>
-                {title}
-                <br/>
-                {price}
-            </figcaption>
-            <button
-                onClick={giveCartProductDetails}
-            >Add to Cart</button>
+            </div>
+            <div className="product-info">
+                <h4>{title}</h4>
+                <h4>Price: €{price}</h4>
+                <button
+                    className="product-button"
+                    onClick={giveCartProductDetails}
+                >
+                    Add to Cart
+                </button>
+            </div>
         </div>
     )
 }
