@@ -1,10 +1,11 @@
 import { useContext } from "react";
 import CartContext from "../context/CartContext";
 
-function ShoppingCartCard({product}){
+function ShoppingCartCard({product, showAdd}){
     const {removeItemFromCart} = useContext(CartContext)
 
     function removeFromCart(){
+        showAdd();
         removeItemFromCart(product)
     }
 

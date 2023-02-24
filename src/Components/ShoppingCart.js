@@ -17,6 +17,7 @@ function ShoppingCart() {
                             product={product}
                             id={product["id"]}
                             key={uuidv4()}
+                            showAdd={product["showAdd"]}
                         />
                     </div>
                 );
