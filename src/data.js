@@ -27,13 +27,13 @@ let products = [
         src: Dreams,
         id: 3,
         title: "Our Dreams at Dusk Vol. 1",
-        price: 3
+        price: 12.99
     },
     {
         src: Souboutei,
         id: 4,
         title: "Souboutei must be destroyed Vol. 1",
-        price: 3
+        price: 9.99
     }
 ]
 

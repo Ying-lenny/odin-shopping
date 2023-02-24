@@ -12,7 +12,7 @@ function ShoppingCartCard({product, showAdd}){
     return(
         <div className="shopping-card">
             <img src={product["src"]} alt={product["title"]}/>
-            <button onClick={removeFromCart}>Button</button>
+            <button onClick={removeFromCart}>X</button>
         </div>
     )
 }

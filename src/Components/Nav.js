@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import CartIcon from "../Assets/cart.png"
+import CartIcon from "../Assets/Cart"
+import CartContext from "../context/CartContext";
 
-function  Nav({}){
+function  Nav({toggleShoppingCart}){
+    const {cart} = useContext(CartContext)
     return (
         <div className="navbar">
-                <ul className="nav-links">
+                <nav className="nav-links">
                     <Link to='/'>Home</Link>
                     <Link to='/Catalog'>Catalog</Link>
-                </ul>
+                    <Link to='/Catalog' onClick={toggleShoppingCart} className='cart-container'>
+                        <CartIcon className="cart-icon"/>
+                        <span className="cart-count-container">
+                            <span>{cart.length}</span>
+                        </span>
+                    </Link>
+                </nav>
         </div>
     )
 }
