@@ -5,6 +5,7 @@ import Nav from './Components/Nav';
 import ShoppingCart from './Components/ShoppingCart'
 import { CartProvider } from "./context/CartContext";
 import { useState } from 'react';
+import './styles/App.css'
 
 function App() {
     const [showCart, setShowCart] = useState(false)

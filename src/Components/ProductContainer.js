@@ -1,6 +1,7 @@
 import React from "react";
 import ProductCard from "./ProductCard";
 import products from "../data";
+import '../styles/Catalog.css'
 
 function ProductContainer() {
 

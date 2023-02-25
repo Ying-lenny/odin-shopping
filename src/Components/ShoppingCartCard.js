@@ -10,10 +10,17 @@ function ShoppingCartCard({product, showAdd}){
     }
 
     return(
-        <div className="shopping-card">
-            <img src={product["src"]} alt={product["title"]}/>
-            <button onClick={removeFromCart}>X</button>
-        </div>
+        <>
+            <img className="cart-img" src={product["src"]} alt={product["title"]}/>
+            <h2>{product['title']}</h2>
+            <h2>{product['price']}</h2>
+            <button 
+                onClick={removeFromCart}
+                className='shopping-cart-btn'
+            >
+                    X
+            </button>
+        </>
     )
 }
 
