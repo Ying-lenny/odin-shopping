@@ -18,7 +18,6 @@ function App() {
     return (
         <CartProvider>
             <BrowserRouter>
-                <div className='Router'>
                     <Nav toggleShoppingCart={toggleShoppingCart}/>
 					{showCart ? 
 						<div 
@@ -28,11 +27,12 @@ function App() {
 							<ShoppingCart toggleShoppingCart={toggleShoppingCart}/>
 						</div> 
 					: null}
+                    <div className='App'>
                     <Routes>
                         <Route path='/' exact element={<Homepage/>}/>
                         <Route path='/Catalog' element={<CatalogPage/>}/>
                     </Routes>
-                </div>
+                    </div>
             </BrowserRouter>
         </CartProvider>
     )

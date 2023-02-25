@@ -30,16 +30,18 @@ function ProductCard(props) {
                 <img src={src} alt={title}/>
             </div>
             <div className="product-info">
-                <h4>{title}</h4>
+                <h4 className="product-title">{title}</h4>
                 <h4>Price: €{price}</h4>
-                { showAdd ?
-                    <button
-                        className="product-button"
-                        onClick={giveCartProductDetails}
-                    >
-                        Add to Cart
-                    </button>
-                : null }
+                <div className="product-btn-container">
+                    { showAdd ?
+                        <button
+                            className="product-button"
+                            onClick={giveCartProductDetails}
+                        >
+                            Add to Cart
+                        </button>
+                    : null }
+                </div>
             </div>
         </div>
     )
