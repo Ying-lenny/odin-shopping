@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import CartIcon from "../Assets/Cart"
 import CartContext from "../context/CartContext";
+import '../styles/Nav.css'
 
 function  Nav({toggleShoppingCart}){
     const {cart} = useContext(CartContext)
