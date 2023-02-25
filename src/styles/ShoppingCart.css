@@ -48,3 +48,27 @@
     display: flex;
     align-items: center;
 }
+
+.shopping-info {
+  width: 100%;
+  margin: .5em;
+}
+
+.shopping-info h2 {
+  padding: .5rem;
+}
+
+.shopping-cart-bottom{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 100px;
+}
+
+.total-price{
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 10px;
+}

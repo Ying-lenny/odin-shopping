@@ -33,16 +33,12 @@
     margin-bottom: auto;
 }
   
-.product-info h4 {
-}
-  
 .product-card button {
-    -webkit-filter: grayscale(25%);
     cursor: pointer;
 }
 
 .product-btn-container {
-    margin-top: 2px;
+    margin-top: 5px;
 }  
   
 .product-button {
